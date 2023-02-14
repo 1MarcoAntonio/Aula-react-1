@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component } from "react";// using class
 
 class Descricao extends Component {
     render() {
