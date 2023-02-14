@@ -1,11 +1,10 @@
-import Name from './components/Name'
-import Descricao from './components/Descricao';
-
+//import Name from './components/Name'
+//import Descricao from './components/Descricao';
+import DadosPessoais from '../src/DadosPessoais/index'
 function App() {
   return (
     <div>
-     <Name />
-     <Descricao/>
+     <DadosPessoais/>
     </div>
   );
 }
