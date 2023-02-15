@@ -1,0 +1,27 @@
+* {
+  margin-left: 15px;
+}
+
+h1 {
+  color: rgb(21, 11, 160);
+  margin-top: 40px;
+}
+
+h2 {
+    margin-top: 40px;
+    color:rgb(20, 122, 153);
+}
+
+.header-p {
+}
+
+.header-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-img {
+    width: 300px;
+    margin-top: 40px;
+    border-radius: 50%;
+}
