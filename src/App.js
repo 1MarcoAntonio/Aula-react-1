@@ -1,11 +1,28 @@
 //import Name from './components/Name'
 //import Descricao from './components/Descricao';
-import DadosPessoais from "../src/components/DadosPessoais/index";
+import { useState } from "react";
+
 function App() {
+  const [task, setTask] = useState();
+  const [list, setList] = useState([]);
+
+  function handleAddTask() {
+    setList([task, ...list]);
+    clear();
+  }
+  function clear() {
+    setTask("");
+  }
   return (
-    <div>
-      <DadosPessoais />
-    </div>
+    <main className="container">
+      <input value={task} onChange={(e) => setTask(e.target.value)} />
+      <button onClick={handleAddTask}>Adicionar tarefa</button>
+      <ul>
+        {list.map((t) => (
+          <li>{t}</li>
+        ))}
+      </ul>
+    </main>
   );
 }
 
